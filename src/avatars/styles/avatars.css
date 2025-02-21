@@ -1,0 +1,36 @@
+.female,
+.male {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.box {
+  padding: 100px;
+  background-color: #ffffff;
+}
+
+.circle {
+  position: relative;
+  display: inline-block;
+}
+
+.circle::after {
+  content: " ";
+  position: absolute;
+  margin: 11px;
+  bottom: 5px;
+  right: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.online::after {
+  background-color: #4cfe88;
+}
+
+.offline::after {
+  background-color: #dbdbdb;
+}
