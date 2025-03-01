@@ -5,7 +5,7 @@
 ## 4주차 로그인
 
 - [로그인](./src/login/login.html)
-- [로그인](./src/login/login.md)
+- [로그인 회고](./src/login/login.md)
 
 ## 마크다운
 
