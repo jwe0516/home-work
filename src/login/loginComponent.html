@@ -20,7 +20,7 @@
     <title>로그인 폼 과제</title>
   </head>
   <body>
-    <!-- 로고 컴포넌트 -->
+    <!-- 1. 로고 -->
     <div class="logo">
       <a href="https://www.naver.com/">
         <svg
@@ -57,10 +57,39 @@
       </a>
     </div>
 
-    <!-- 버튼 컴포넌트 -->
-    <button type="submit" class="button-login">
-      <span class="sr-only">로그인</span>
-    </button>
+    <!-- 2. 폼 합치기 -->
+    <div class="form-container">
+      <form action="/" class="form-space">
+        <!-- 아이디 입력 컴포넌트 -->
+        <label for="user-id" class="sr-only">아이디</label>
+        <input
+          type="email"
+          placeholder="아이디(이메일)"
+          name="user-id"
+          id="user-id"
+          required
+        />
+        <span class="error-message"
+          >아이디는 이메일 형식으로 입력해 주세요.</span
+        >
+        <!-- 비밀번호 입력 컴포넌트 -->
+        <label for="user-pw" class="sr-only">비밀번호</label>
+        <input
+          type="password"
+          placeholder="비밀번호"
+          name="user-pw"
+          id="user-pw"
+          minlength="10"
+          required
+        />
+        <span class="error-message">비밀번호는 10자리 이상 입력해 주세요.</span>
+        <!-- 버튼 컴포넌트 -->
+
+        <div class="button-wrap">
+          <button type="submit" class="button-login">로그인</button>
+        </div>
+      </form>
+    </div>
 
     <!-- 체크 박스 컴포넌트 -->
     <div class="checkbox-container">
@@ -70,31 +99,12 @@
 
     <!-- ip보안 스위치 컴포넌트 -->
     <label class="switch-on-off">
-      <input type="checkbox" />
-      <span class="switch-on-off"></span>
+      <input type="checkbox" id="toggle" />
+      <span class="switch-set">
+        <a href="./pages/ip_security.html" target="_blank" class="switch-link"
+          >IP 보안</a
+        >
+      </span>
     </label>
-
-    <!-- 아이디 입력 컴포넌트 -->
-    <label for="user-id" class="sr-only">아이디</label>
-    <input
-      type="email"
-      placeholder="아이디(이메일)"
-      name="user-id"
-      id="user-id"
-      required
-    />
-    <span class="error-message">아이디는 이메일 형식으로 입력해 주세요.</span>
-
-    <!-- 비밀번호 입력 컴포넌트 -->
-    <label for="user-pw" class="sr-only">비밀번호</label>
-    <input
-      type="password"
-      placeholder="비밀번호"
-      name="user-pw"
-      id="user-pw"
-      minlength="10"
-      required
-    />
-    <span class="error-message">비밀번호는 10자리 이상 입력해 주세요.</span>
   </body>
 </html>
