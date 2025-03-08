@@ -10,7 +10,7 @@
 }
 
 /* 예시 1 하얀 글씨 */
-.card-container.ex-1 {
+.card-container.apple-1 {
   display: flex;
   flex-flow: column wrap;
   inline-size: 100%;
@@ -51,7 +51,7 @@
 
 /* 예시 2 검정 글씨 */
 
-.card-container.ex-2 {
+.card-container.apple-2 {
   display: flex;
   flex-flow: column wrap;
   inline-size: 100%;
