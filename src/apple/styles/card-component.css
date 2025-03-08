@@ -86,8 +86,20 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 2x) {
+    background: no-repeat url(../products/ipad_pro_2x.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+
   @media (min-width: 1024px) {
     background: no-repeat url(../products/ipad_pro_wide.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: 1024px) and (min-resolution: 2x) {
+    background: url(../products/ipad_pro_wide_2x.jpeg);
     background-position: center;
     background-size: cover;
   }
@@ -99,8 +111,20 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-resolution: 2x) {
+    background: no-repeat url(../products/ipad_air_2x.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+
   @media (min-width: 1024px) {
     background: no-repeat url(../products/ipad_air_wide.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: 1024px) and (min-resolution: 2x) {
+    background: url(../products/ipad_air_wide_2x.jpeg);
     background-position: center;
     background-size: cover;
   }

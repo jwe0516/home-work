@@ -3,9 +3,23 @@
 .item-container.iphone-pro {
   display: grid;
   background: no-repeat url(../products/iphone15_pro.jpeg);
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2x) {
+    background: no-repeat url(../products/iphone15_pro_2x.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
 
   @media (min-width: 1024px) {
     background: no-repeat url(../products/iphone15_pro_wide.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: 1024px) and (min-resolution: 2x) {
+    background: url(../products/iphone15_pro_wide_2x.jpeg);
     background-position: center;
     background-size: cover;
   }
@@ -16,6 +30,12 @@
   background: no-repeat url(../products/iphone15.jpeg);
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2x) {
+    background: no-repeat url(../products/iphone15_2x.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .item-container.apple-watch {
@@ -23,6 +43,12 @@
   background: no-repeat url(../products/apple_watch.jpeg);
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2x) {
+    background: no-repeat url(../products/apple_watch_2x.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .item-container.macbook-air {
@@ -30,6 +56,12 @@
   background: no-repeat url(../products/macbook_air.jpeg);
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2x) {
+    background: no-repeat url(../products/macbook_air_2x.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .item-container.airpods-pro {
@@ -37,6 +69,12 @@
   background: no-repeat url(../products/airpods_pro.jpeg);
   background-position: center;
   background-size: cover;
+
+  @media (min-resolution: 2x) {
+    background: no-repeat url(../products/airpods_pro_2x.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .all-container {
