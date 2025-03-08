@@ -1,3 +1,56 @@
 @import "./card-component.css";
 
-/* 카드 레이아웃 */
+.item-container.iphone-pro {
+  display: grid;
+  background: no-repeat url(../products/iphone15_pro.jpeg);
+
+  @media (min-width: 1024px) {
+    background: no-repeat url(../products/iphone15_pro_wide.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.item-container.iphone {
+  display: grid;
+  background: no-repeat url(../products/iphone15.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.item-container.apple-watch {
+  display: grid;
+  background: no-repeat url(../products/apple_watch.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.item-container.macbook-air {
+  display: grid;
+  background: no-repeat url(../products/macbook_air.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.item-container.airpods-pro {
+  display: grid;
+  background: no-repeat url(../products/airpods_pro.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.all-container {
+  display: grid;
+  gap: var(--small-spacing);
+  grid-template-columns: 1fr;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    .ipad-pro,
+    .ipad-air,
+    .iphone-pro {
+      grid-column: span 2;
+    }
+  }
+}

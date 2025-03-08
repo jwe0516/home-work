@@ -18,7 +18,6 @@
   margin-block-start: var(--large-spacing);
   gap: var(--small-spacing);
   text-align: center;
-  grid-area: 1/1;
   color: var(--white);
 
   h2 {
@@ -41,11 +40,10 @@
 }
 .item-container {
   display: grid;
-  background: no-repeat center/cover url(/src/apple/products/ipad_pro.jpeg);
+  background: no-repeat center/cover url(../products/ipad_pro.jpeg);
 
   @media (min-width: 1024px) {
-    background: no-repeat center/cover
-      url(/src/apple/products/ipad_pro_wide.jpeg);
+    background: no-repeat center/cover url(../products/ipad_pro_wide.jpeg);
   }
 }
 
@@ -59,7 +57,6 @@
   margin-block-start: var(--large-spacing);
   gap: var(--small-spacing);
   text-align: center;
-  grid-area: 1/1;
   color: var(--black);
 
   h2 {
@@ -85,20 +82,26 @@
 
 .item-container.ipad-pro {
   display: grid;
-  background: no-repeat center/cover url(/src/apple/products/ipad_pro.jpeg);
+  background: no-repeat url(../products/ipad_pro.jpeg);
+  background-position: center;
+  background-size: cover;
 
   @media (min-width: 1024px) {
-    background: no-repeat center/cover
-      url(/src/apple/products/ipad_pro_wide.jpeg);
+    background: no-repeat url(../products/ipad_pro_wide.jpeg);
+    background-position: center;
+    background-size: cover;
   }
 }
 
 .item-container.ipad-air {
   display: grid;
-  background: no-repeat center/cover url(/src/apple/products/ipad_air.jpeg);
+  background: no-repeat url(../products/ipad_air.jpeg);
+  background-position: center;
+  background-size: cover;
 
   @media (min-width: 1024px) {
-    background: no-repeat center/cover
-      url(/src/apple/products/ipad_air_wide.jpeg);
+    background: no-repeat url(../products/ipad_air_wide.jpeg);
+    background-position: center;
+    background-size: cover;
   }
 }
