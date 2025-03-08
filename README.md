@@ -4,8 +4,8 @@
 
 ## 3월 1주차
 
-- [과제] (./src/apple/apple.html)
-- [회고] (./src/apple/apple.md)
+- [과제](./src/apple/apple.html)
+- [회고](./src/apple/apple.md)
 
 ## 4주차 로그인
 
