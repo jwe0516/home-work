@@ -1,6 +1,6 @@
-@import "./base.css";
-@import "./reset.css";
-@import "./theme.css";
+@import "../styles/base.css";
+@import "../styles/reset.css";
+@import "../styles/theme.css";
 @import "../comp/buttonComp.css";
 
 /* 공통 출시일 공개*/

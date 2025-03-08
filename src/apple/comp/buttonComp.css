@@ -1,26 +1,30 @@
-@import "/src/apple/styles/base.css";
-@import "/src/apple/styles/reset.css";
-@import "/src/apple/styles/theme.css";
-
+@import "../styles/base.css";
+@import "../styles/reset.css";
+@import "../styles/theme.css";
 /* (Small Screen - 1024px 이하 / Large Screen - 1024px 이상) */
 
 :root {
   --border-radius: 1.5625rem;
 }
 
-body {
-  margin: 200px;
-}
-
 /* 버튼에 공통 값 추가 */
 .button {
-  padding: var(--x-small-spacing);
+  display: inline-flex;
   font-size: var(--xx-small-text);
+  padding: var(--x-small-spacing) var(--small-spacing);
   border-radius: var(--border-radius);
+
+  @media (min-width: 1024px) {
+    font-size: var(--x-small-text);
+  }
 }
 
-.ipad-pro {
-  margin: 20px;
+/* 버튼 간 사이 여백 */
+.button.fill {
+  margin-inline-end: var(--base-spacing);
+}
+
+.button-blue {
   .button {
     border: 1px solid var(--blue-100);
     background: transparent;
@@ -33,8 +37,7 @@ body {
   }
 }
 
-.ipad-air {
-  margin: 20px;
+.button-black {
   .button {
     border: 1px solid var(--black);
     background: transparent;
@@ -42,73 +45,6 @@ body {
 
     &.fill {
       background: var(--black);
-      color: var(--white);
-    }
-  }
-}
-
-.iphone-pro {
-  margin: 20px;
-  .button {
-    border: 1px solid var(--blue-100);
-    background: transparent;
-    color: var(--blue-100);
-
-    &.fill {
-      background: var(--blue-100);
-      color: var(--white);
-    }
-  }
-}
-.iphone {
-  margin: 20px;
-  .button {
-    border: 1px solid var(--black);
-    background: transparent;
-    color: var(--black);
-
-    &.fill {
-      background: var(--black);
-      color: var(--white);
-    }
-  }
-}
-
-.watch {
-  margin: 20px;
-  .button {
-    border: 1px solid var(--blue-100);
-    background: transparent;
-    color: var(--blue-100);
-
-    &.fill {
-      background: var(--blue-100);
-      color: var(--white);
-    }
-  }
-}
-.macbook {
-  margin: 20px;
-  .button {
-    border: 1px solid var(--black);
-    background: transparent;
-    color: var(--black);
-
-    &.fill {
-      background: var(--black);
-      color: var(--white);
-    }
-  }
-}
-.airpods {
-  margin: 20px;
-  .button {
-    border: 1px solid var(--blue-100);
-    background: transparent;
-    color: var(--blue-100);
-
-    &.fill {
-      background: var(--blue-100);
       color: var(--white);
     }
   }

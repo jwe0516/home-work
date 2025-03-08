@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -6,11 +6,45 @@
     <title>Apple Card Component</title>
     <link rel="icon" href="./favicon/apple-favicon.svg" />
     <link rel="apple-touch-icon" href="./favicon/apple-favicon.svg" />
-    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/card-component.css" />
   </head>
   <body>
-    <!-- 카드 컴포넌트 -->
+    <div class="all-container">
+      <!-- example 1 하얀 글씨-->
+      <div class="item-container ipad-pro">
+        <div class="card-container ex-1">
+          <h2 class="item-name">iPad Pro</h2>
+          <p class="item-advertise">
+            놀라우리만치 얇다. <br />
+            엄청나게 강력하다.
+          </p>
+          <span class="release">출시일 추후 공개</span>
+          <div class="button-blue">
+            <a href="/" class="button fill">더 알아보기</a>
+            <a href="/" class="button">가격 보기</a>
+          </div>
+        </div>
+      </div>
 
+      <!-- example 2 검정 글씨 -->
+      <div class="item-container ipad-air">
+        <div class="card-container ex-2">
+          <h2 class="item-name">iPad air</h2>
+          <p class="item-advertise">
+            두 가지 사이즈. 더 빠른 칩. <br />
+            무엇이든 거뜬하게.
+          </p>
+          <span class="release">출시일 추후 공개</span>
+          <div class="button-black">
+            <a href="/" class="button fill">더 알아보기</a>
+            <a href="/" class="button">가격 보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
